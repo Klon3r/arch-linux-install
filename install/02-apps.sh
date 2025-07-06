@@ -1,3 +1,7 @@
+# Add multilib
+sudo rm /etc/pacman.conf
+sudo cp /config/pacman.conf /etc
+
 # Install Apps
 sudo pacman -S --noconfirm neovim zip unzip git wl-clipboard xclip cliphist nwg-look obsidian steam gnome-browser-connector nwg-look ttf-melso-nerd ttf-jetbrains-mono-nerd  
 
