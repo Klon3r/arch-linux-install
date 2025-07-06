@@ -8,4 +8,7 @@ RUNZSH=no CHSH=no KEEP_ZSHRC=yes sh -c "$(curl -fsSL https://raw.githubuserconte
 yay -S --noconfirm zsh-theme-powerlevel10k-git
 echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 
+# Set default shell as zsh
+chsh -s /usr/bin/zsh
+
 echo -e "\nInstalled: Shell"
