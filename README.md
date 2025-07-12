@@ -8,6 +8,11 @@
 - `cd arch-linux-install`
 - `sudo chmod +x ./install.sh`
 
+## Printer (CUPS)
+
+- `http://localhost:631`
+- Administration > Add printer
+
 ## Chroot
 
 1. ### Get iso/usb ready
