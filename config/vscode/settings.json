@@ -47,5 +47,10 @@
     "class:list"
   ],
   "tailwindCSS.classFunctions": ["tw", "clsx"],
-  "cSpell.userWords": ["Klone"]
+  "cSpell.userWords": ["Klone"],
+  "editor.tabSize": 2,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "git.confirmSync": false,
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }
