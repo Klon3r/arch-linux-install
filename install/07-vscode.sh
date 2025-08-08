@@ -12,6 +12,7 @@ code --install-extension ms-vscode.vscode-typescript-next
 code --install-extension pkief.material-icon-theme
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension vscodevim.vim
+code --install-extension wayou.vscode-todo-highlight
 
 cp config/vscode/keybindings.json ~/.config/Code/User
 cp config/vscode/settings.json ~/.config/Code/User
