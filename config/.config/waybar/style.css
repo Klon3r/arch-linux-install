@@ -43,10 +43,12 @@ window#waybar {
 
 #clock {
   background-color: #1b1b1b;
+  padding-top: 5px;
 }
 
 #workspaces {
   min-width: 0;
+  padding-top: 5px;
 }
 
 #workspaces button {
