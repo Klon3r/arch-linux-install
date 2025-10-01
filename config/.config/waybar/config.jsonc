@@ -29,7 +29,7 @@
     "clock": {
       "format": "{:%I:%M %p}",
       "format-alt": "{:%d %B}",
-      "tooltip": "false",
+      "tooltip": false,
       "locale": "en_AU.UTF-8",
       "on-click-right": "gnome-calendar"
     },
