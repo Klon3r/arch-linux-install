@@ -32,3 +32,44 @@
 - `yay -Yc` Clean unneeded dependencies
 - `sudo pacman -Sc` - Remove all cached packages that are not currently installed
 - `~/.cache` - Remove .cache to help clean up
+
+## Fixes
+<details>
+  <summary>AMDGPU - High Performance on Boot (Fix 144Hz Ultrawide Artifacts)</summary>
+
+
+- If you have an AMD RX 7600 or similar RDNA3 card, intermittent white/artifact lines can appear at high refresh rates (e.g., 144Hz ultrawide) due to dynamic power management (DPM) downclocking GPU and VRAM.  
+The following steps force **high performance** to fix this.
+
+
+### 1. Create a udev rule
+
+Open a new udev rule file:
+
+```bash
+sudo nvim /etc/udev/rules.d/30-amdgpu-high-performance.rules
+```
+
+### 2. Paste the following
+```
+ACTION=="add", SUBSYSTEM=="drm", DRIVERS=="amdgpu", ATTR{power_dpm_force_performance_level}="high"
+```
+
+### 3. Reload udev rules and trigger 
+```bash
+sudo udevadm control --reload
+sudo udevadm trigger
+```
+
+### 4. Verify the setting
+```
+cat /sys/class/drm/card1/device/power_dpm_force_performance_level
+```
+- It should display
+```ngix
+high
+```
+
+
+</details>
+  
