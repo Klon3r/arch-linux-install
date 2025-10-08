@@ -16,7 +16,7 @@
     "modules-right": ["tray", "pulseaudio", "custom/arch"],
 
     "custom/arch": {
-      "format": "  ",
+      "format": " ",
       "tooltip": false,
       "on-click": "wlogout"
     },
@@ -62,7 +62,7 @@
       "format-muted": "{icon} Muted",
       "format-icons": {
         "headphones": "",
-        "default": ["  ", "  "]
+        "default": [" ", " "]
       },
       "scroll-step": 5,
       "on-click": "pamixer -t",

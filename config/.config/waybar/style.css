@@ -6,9 +6,11 @@
 ███████║   ██║      ██║   ███████╗███████╗
 ╚══════╝   ╚═╝      ╚═╝   ╚══════╝╚══════╝
 */
+
 * {
   border: none;
   font-family: "Fira Code", "Symbols Nerd Font Mono";
+  /* font-family: "Jetbrains Mono Nerd Font", "Symbols Nerd Font Mono"; */
   font-size: 16px;
   font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
   min-height: 25px;
@@ -16,41 +18,34 @@
 
 window#waybar {
   background: #1b1b1b;
-  border-radius: 5px;
-  margin-top: 5px;
+  /* border-radius: 5px; */
 }
 
 #custom-arch,
 #clock,
-#custom-arch2,
 #custom-power {
   color: #aa6bbd;
 }
 
-#custom-arch2 {
-  margin-top: 2px;
+#custom-arch {
+  font-size: 22px;
+  margin-left: 20px;
   margin-right: 5px;
-  margin-left: 10px;
-  font-size: 20px;
-}
-
-#custom-arch,
-#custom-power {
-  margin-top: 2px;
-  margin-right: 5px;
-  font-size: 20px;
 }
 
 #clock {
   background-color: #1b1b1b;
-  padding-top: 5px;
 }
 
-#workspaces {
-  min-width: 0;
-  padding-top: 5px;
+#pulseaudio {
+  color: #fff;
 }
 
+#tray {
+  margin-right: 10px;
+}
+
+/* WORKSPACES */
 #workspaces button {
   color: #fff;
   min-width: 0;
@@ -59,14 +54,10 @@ window#waybar {
 #workspaces button:hover {
   background: rgba(0, 0, 0, 0.5);
   box-shadow: inherit;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
-#pulseaudio {
-  color: #fff;
-  margin: 5px;
-}
-
-#tray {
-  margin-right: 10px;
+#workspaces button.active {
+  background: rgba(170, 107, 189, 0.2);
+  border-radius: 5px;
 }
